@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sviluppo di una pagina web|Blog Epicode</title>
   </head>
-  <body>
-    <header>
-      <img src="./img/logo.svg" alt="Logo Epicode" />
-      <h1>Epicode - Il blog dei developers</h1>
+  <body style="background-color: rgb(255, 255, 255); padding: 0; margin: 0; box-sizing: 0">
+    <header style="background-color: rgb(255, 87, 255); width: 100%">
+      <img src="./img/logo.svg" alt="Logo Epicode" style="padding: 10px" />
+      <h1 style="padding: 10px">Epicode - Il blog dei developers</h1>
     </header>
     <hr />
-    <nav>
+    <nav style="background-color: rgb(45, 255, 255); margin: 0">
       <ul>
         <li>Home</li>
         <li>Articoli</li>
@@ -20,7 +20,7 @@
       </ul>
     </nav>
     <hr />
-    <main>
+    <main style="margin-left: 10px">
       <h2>Come creare un template per i post</h2>
       <h3>di Mario Rossi -pubblicato il 25-10-2020</h3>
       <article>
@@ -78,7 +78,47 @@
             </tr>
           </tbody>
         </table>
+        <p>
+          Un test di validazione potrà essere fatto tramite il <a href="https://jigsaw.w3.org/css-validator/" target="_blank">tool online</a> dedicato allo scopo. Una volta ottimizzato il tutto,
+          avremo raggiunto il nostro obiettivo ed essere stati dei veri developers come loro:
+        </p>
+        <iframe
+          src="https://www.youtube.com/embed/Yzp_MPyoIqU"
+          title="Da Educatore a Front End Developer- La Storia di Stefano"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </article>
+      <hr />
+
+      <form>
+        <fieldset>
+          <legend>Vuoi rimanere aggiornato su altre novità del blog? iscriviti alla nostra newsletter:</legend>
+          <input type="email" placeholder="Inserisci la tua email" name="email" />
+          <button type="submit">Iscriviti!</button>
+        </fieldset>
+      </form>
     </main>
+    <div style="background-color: rgb(255, 87, 255); margin-bottom: 0">
+      <h4>Articoli collegati</h4>
+      <pre style="margin-bottom: 0">
+        Validare il codice HTML
+        Categoria: develop
+        Data: 18-9-2020
+
+        Correggere la sintassi
+        Categoria: develop
+        Data: 16-09-2020
+
+        Meno Kb nella pagina
+        Categoria: ottimizzazione
+        30-9-2020
+      </pre>
+    </div>
+    <footer style="background-color: rgb(45, 255, 255); margin-top: 0">
+      <p style="margin-top: 0">Blog di Epicode &copy;2021</p>
+      <p>testata online di Mario Rossi registrata con prot. n.213/2018 - via Luigi Einaudi 2 - Milano. P.IVA 00112233 <br /><a href="mailto:info@epicode.school">info@epicode.school</a></p>
+    </footer>
   </body>
 </html>
