@@ -7,23 +7,23 @@
     <title>Sviluppo di una pagina web|Blog Epicode</title>
   </head>
   <body style="background-color: rgb(255, 255, 255); padding: 0; margin: 0; box-sizing: 0">
-    <header style="background-color: rgb(255, 87, 255); width: 100%">
+    <header style="background-color: rgb(254, 129, 254); width: 100%">
       <img src="./img/logo.svg" alt="Logo Epicode" style="padding: 10px" />
       <h1 style="padding: 10px">Epicode - Il blog dei developers</h1>
     </header>
     <hr />
     <nav style="background-color: rgb(45, 255, 255); margin: 0">
       <ul>
-        <li>Home</li>
-        <li>Articoli</li>
-        <li>Job</li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#articoli" style="scroll-behavior: smooth">Articoli</a></li>
+        <li><a href="#job" style="scroll-behavior: smooth">Job</a></li>
       </ul>
     </nav>
     <hr />
     <main style="margin-left: 10px">
       <h2>Come creare un template per i post</h2>
       <h3>di Mario Rossi -pubblicato il 25-10-2020</h3>
-      <article>
+      <article id="articoli">
         <p>La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le parti comuni da applicare a tutte le pagine</p>
         <ul>
           Le varie aree saranno quindi suddivise in:
@@ -39,7 +39,7 @@
           <li>Applicare gli stili CSS</li>
           <li>L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffusione pressoché totale.</li>
         </ul>
-        <table style="width: 100%; border-collapse: collapse">
+        <table style="width: 75%; border-collapse: collapse">
           <caption>
             Diffusione del CSS
           </caption>
@@ -92,15 +92,16 @@
       </article>
       <hr />
 
-      <form>
+      <form id="#job">
         <fieldset>
-          <legend>Vuoi rimanere aggiornato su altre novità del blog? iscriviti alla nostra newsletter:</legend>
+          <legend><strong>Newsletter</strong></legend>
+          <h4>Vuoi rimanere aggiornato su altre novità del blog? iscriviti alla nostra newsletter:</h4>
           <input type="email" placeholder="Inserisci la tua email" name="email" />
           <button type="submit">Iscriviti!</button>
         </fieldset>
       </form>
     </main>
-    <div style="background-color: rgb(255, 87, 255); margin-bottom: 0">
+    <div style="background-color: rgb(254, 129, 254); margin-bottom: 0">
       <h4>Articoli collegati</h4>
       <pre style="margin-bottom: 0">
         Validare il codice HTML
